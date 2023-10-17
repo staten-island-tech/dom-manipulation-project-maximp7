@@ -1,6 +1,6 @@
 const form = document.querySelector("#form");
 console.log(form);
-const firstNAme = document.querySelector(".first-name");
+const firstName = document.querySelector(".first-name");
 DOMSelectors = {
     form: document.querySelector
 }
