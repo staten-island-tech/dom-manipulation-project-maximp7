@@ -10,6 +10,7 @@ DOMSelectors.form.addEventListener("submit", function () {
     event.preventDefault();
 });
  */
+// foods
 
 const DOMSelectors = {
     button: document.getElementById("btn"),
@@ -24,3 +25,4 @@ function backgroundAndText(background, text) {
     text.style.fontSize = "40px";
 }
 backgroundAndText(DOMSelectors.box, DOMSelectors.text);
+

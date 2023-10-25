@@ -7,15 +7,17 @@
 </head>
 
 <body>
-<div id="Box">
-    <p id="text"> CLick the Box</p>
-    <button type="button" id="btn">Click ME!</button>
-    <ul id="list">
-        <li><a href="#">Item 1</a></li>
-        <li><a href="#">Item 2</a></li>
-        <li><a href="#">Item 3</a></li>
-      </ul>
-</div>
+    <button onClick="showImage()">Click ME!</button>
+    <div id="first" style="height: 200px; width:200px; display:none;">
+        <img src="grape.jpg"/> 
+    </div>
+    <script>
+        const showImage = () => {
+            document.getElementById("first").style.display ='block';
+        }
+    </script>
+ 
+
 
 <script sre="script.js"></script>
 
