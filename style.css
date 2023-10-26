@@ -1,11 +1,16 @@
+.body{
+    background-color: beige;
+}
+
+
 .flex-contrainer {
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
     padding: 0%;
 }
 
-.card{
+.card {
     width: 20%;
     height: 35%;
     display: flex;
