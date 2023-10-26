@@ -10,6 +10,7 @@ DOMSelectors.form.addEventListener("submit", function () {
     event.preventDefault();
 });
  */
+// foods
 
 const DOMSelectors = {
     btn:document.getElementById("btn"),
@@ -17,6 +18,7 @@ const DOMSelectors = {
     box:document.getElementById("container"),
 
 }
+<<<<<<< HEAD
 
 DOMSelectors.btn.addEventListener("click", function () {
     let task = DOMSelectors.input.value;
@@ -41,3 +43,7 @@ remove.forEach((buttond) => {
         event.target.parentElement.remove();
 });
 })};
+=======
+backgroundAndText(DOMSelectors.box, DOMSelectors.text);
+
+>>>>>>> 25dcc77850e727c82e2a9603ca30e70e63cfbc69
