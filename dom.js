@@ -12,15 +12,32 @@ DOMSelectors.form.addEventListener("submit", function () {
  */
 
 const DOMSelectors = {
-    button: document.getElementById("btn"),
-    text: document.querySelector("#text"),
-    box: document.getElementById("Box"),
-    points: document.querySelectorAll(".point"),
-};
+    btn:document.getElementById("btn"),
+    input:document.querySelector(`#input`),
+    box:document.getElementById("container"),
 
-function backgroundAndText(background, text) {
-    background.style.backgroundColor = "blue";
-    text.innerHTML = "This is now Blue";
-    text.style.fontSize = "40px";
 }
-backgroundAndText(DOMSelectors.box, DOMSelectors.text);
+
+DOMSelectors.btn.addEventListener("click", function () {
+    let task = DOMSelectors.input.value;
+    DOMSelectors.box.insertAdjacentHTML("beforeend", ` <div><p id="card"> ${task}.
+     <button class="btnd">-</button> </p> </div> `)
+erase();
+});
+
+const tasks = {
+btnd: btnd  = "#btnd",
+card: card = "#card"
+}
+
+DOMSelectors.btn.addEventListener("click", function () {
+    DOMSelectors.input.value = "";
+});
+
+function erase() {
+const remove = document.querySelectorAll(".btnd");
+remove.forEach((buttond) => {
+    buttond.addEventListener("click", (event) => {
+        event.target.parentElement.remove();
+});
+})};
