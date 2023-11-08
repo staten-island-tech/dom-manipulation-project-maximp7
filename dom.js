@@ -8,14 +8,14 @@ const DOMSelectors = {
 };
 
 DOMSelectors.card_form.addEventListener("submit", (event) => {
-  event.preventDefault();
+  event.preventDefault()
   const new_card = {
     name: DOMSelectors.name_input.value,
     color: DOMSelectors.color_input_value,
     taste: DOMSelectors.taste_input_value,
   };
-  add_card(new_card);
-  clear_fields();
+  add_card(new_card)
+  clear_fields()
 });
 
 function add_card(card) {
@@ -29,7 +29,7 @@ function add_card(card) {
         </div>`
   );
 
-  const button = document.querySelector(".remove");
+  const button = document.querySelector(".remove")
   button.addEventListener("click", (event) => {
     button.parentElement.remove();
   });
