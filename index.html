@@ -1,33 +1,17 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dom Manipulation Max</title>
+    
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <form id="card-form">
-      <input type="text" id="name" placeholder="Name" required="true " />
-      <input
-        type="text"
-        id="color_input"
-        placeholder="Color"
-        required="true "
-      />
-      <input type="url" id="taste_input" placeholder="Taste" required="true " />
+      <input type="text" id="fruit-name" placeholder="Name" required />
+      <input type="url" id="image" placeholder="Image URL" required />
+      <input type="text" id="Color" placeholder="Color" required />
       <button id="btn">Create Card</button>
     </form>
-    <div id="card_holder">
-      <!-- <div class = "card">
-    <h1 class="card-title"></h1>
-    <h2 class="color"></h2>
-    <img src="" alt="">
-    <button class = "remove">Remove</button>
-   </div> -->
-    </div>
-
+    <div class="flex-container" id="card_holder"></div>
     <script src="dom.js"></script>
   </body>
 </html>
