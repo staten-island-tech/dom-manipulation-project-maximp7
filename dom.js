@@ -7,7 +7,10 @@ const DOMselectors = {
 };
 
 function makeFruit() {
-  const make = {name: DOMselectors.FruitNameform.value,img: DOMselectors.FruitImgform.value,desc: DOMselectors.FruitDescform.value,
+  const make = {
+    name: DOMselectors.FruitNameform.value,
+    img: DOMselectors.FruitImgform.value,
+    desc: DOMselectors.FruitDescform.value,
   };
   return make;
 }
