@@ -7,10 +7,7 @@ const DOMselectors = {
 };
 
 function makeFruit() {
-  const make = {
-    name: DOMselectors.FruitNameform.value,
-    img: DOMselectors.FruitImgform.value,
-    desc: DOMselectors.FruitDescform.value,
+  const make = {name: DOMselectors.FruitNameform.value,img: DOMselectors.FruitImgform.value,desc: DOMselectors.FruitDescform.value,
   };
   return make;
 }
@@ -19,25 +16,25 @@ function addcard(Fruit) {
   const cardHolder = document.getElementById("card_holder");
   const card = document.createElement("div");
   card.className = "card";
-  card.innerHTML = ` <h1 class="card-title">${Fruit.name}</h1>
-    <img src="${Fruit.img}" alt="" class="pic">
-    <h2 class="animal-desc">${Fruit.desc}</h2>
-    <button class="btnd">Remove the Card</button>`;
+  card.innerHTML = ` <h1 class="cardtitle">${Fruit.name}</h1>
+    <img src="${Fruit.img}" alt="" class="picture">
+    <h2 class="fruitdesc">${Fruit.desc}</h2>
+    <button class="btnremove">Remove the Card</button>`;
   cardHolder.insertAdjacentElement("afterbegin", card);
 
-  card.querySelector(".btnd").addEventListener("click", () => {
+  card.querySelector(".btnremove").addEventListener("click", () => {
     card.remove();
   });
 }
 
 DOMselectors.form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const Concard = makeFruit();
-  addcard(Concard);
-  emptytbox();
+  const makey = makeFruit();
+  addcard(makey);
+  cleartext();
 });
 
-function emptytbox() {
+function cleartext() {
   DOMselectors.FruitNameform.value = "";
   DOMselectors.FruitImgform.value = "";
   DOMselectors.FruitDescform.value = "";
